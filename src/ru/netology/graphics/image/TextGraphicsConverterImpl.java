@@ -42,7 +42,7 @@ public class TextGraphicsConverterImpl implements TextGraphicsConverter {
             for (int w = 0; w < newWidth; w++) {
                 int color = bwRaster.getPixel(w, h, new int[3])[0];
                 char c = schema.convert(color);
-                sb.append(c).append(c);
+                sb.append(c).append(c).append(c);
             }
             sb.append("\n");
         }
